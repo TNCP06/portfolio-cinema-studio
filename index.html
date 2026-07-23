@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinema Studio | Creative Content Agency</title>
+  <meta name="description" content="We're a creative content agency that moves at the speed of your ambition. From cinematic video and photography to 3D animation." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header id="main-header">
+    <div class="container nav-content">
+      <a href="index.html" class="brand-logo" id="header-brand-logo">Cinema Studio</a>
+      
+      <nav class="nav-links" id="desktop-nav-menu">
+        <a href="#work" class="nav-link active" id="nav-link-work">Work</a>
+        <a href="#who-we-are" class="nav-link" id="nav-link-studio">Studio</a>
+        <a href="#how-we-roll" class="nav-link" id="nav-link-manifesto">Manifesto</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="theme-toggle-btn icon-btn" id="theme-toggle-desktop" aria-label="Toggle theme">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+
+        <a href="#connect" class="btn-connect open-connect-modal" id="header-connect-btn">
+          Connect <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+
+        <button id="mobile-menu-toggle" class="mobile-menu-btn icon-btn" aria-label="Toggle menu">
+          <span class="material-symbols-outlined" style="font-size: 26px;">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#work" class="nav-link" id="mobile-nav-work">Work</a>
+    <a href="#who-we-are" class="nav-link" id="mobile-nav-studio">Studio</a>
+    <a href="#how-we-roll" class="nav-link" id="mobile-nav-manifesto">Manifesto</a>
+    <button class="btn-connect open-connect-modal" id="mobile-nav-connect" style="margin-top: 20px; justify-content: center;">
+      Connect <span class="material-symbols-outlined">arrow_forward</span>
+    </button>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <img src="/hero_bg.jpg" alt="Craft & Yellow Hero Banner" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge">[ CREATIVE CONTENT & PRODUCTION STUDIO ]</span>
+          <h1 class="hero-title" id="hero-heading">STORIES AT THE<br/><span class="text-accent-inline">SPEED OF AMBITION.</span></h1>
+          <p class="hero-desc" id="hero-description">
+            We craft visual stories that command attention. From commercial film and photography to 3D animation — where high-energy speed meets master craftsmanship.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="section" id="who-we-are" style="background-color: var(--color-deep-black); color: var(--color-off-white);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 32px; align-items: start;">
+          <div style="grid-column: span 4;" class="mobile-col-span-12">
+            <span class="section-title-label">Who are we?</span>
+          </div>
+          <div style="grid-column: span 8; display: flex; flex-direction: column; gap: 24px;" class="mobile-col-span-12">
+            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.15;" id="who-we-are-heading">
+              <span style="color: var(--color-electric-yellow);">Trusted by industry leaders</span>, not because we chase volume, but because we craft stories with intention.
+            </h2>
+            <p style="font-size: 1.15rem; color: var(--color-secondary); max-width: 650px;" id="who-we-are-text">
+              From cinematic video and photography to high-end 3D animation, every detail is carefully crafted to create impact, from the first concept to global rollout.
+            </p>
+            <div style="display: flex; gap: 16px; margin-top: 16px;">
+              <a href="#connect" class="btn-connect open-connect-modal" id="who-we-are-talk-btn">Let's talk</a>
+              <a href="#how-we-roll" class="btn-connect" style="background: transparent; color: var(--color-off-white); border-color: var(--color-off-white);" id="who-we-are-culture-btn">Culture</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Made by Yellow Portfolio Bento Grid -->
+    <section class="section" id="work">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px;">
+          <span class="section-title-label">[ 01 ]</span>
+          <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; line-height: 1;" id="made-by-yellow-heading">
+            Made by Yellow.
+          </h2>
+          <p style="font-size: 1.1rem; color: var(--color-secondary); max-width: 500px;">
+            Every frame tells our story too, of passion, agility, and the pursuit of brilliance. A showcase of the work we proudly shaped together.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-container" id="portfolio-filters">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+          <button class="filter-btn" data-filter="corporate" id="filter-corporate">Corporate</button>
+          <button class="filter-btn" data-filter="artists" id="filter-artists">Artists</button>
+          <button class="filter-btn" data-filter="events" id="filter-events">Events</button>
+        </div>
+
+        <!-- Bento Grid -->
+        <div class="bento-grid" id="bento-portfolio-grid">
+          <!-- Project 1: Oceanco Leviathan -->
+          <a href="project-oceanco.html" class="bento-card bento-large" data-category="corporate" id="project-card-oceanco">
+            <img src="oceanco_hd.jpg" alt="Oceanco - Leviathan" class="bento-img" />
+            <div class="bento-card-content">
+              <span class="badge">Corporate</span>
+              <h3 class="bento-card-title">Oceanco - Leviathan</h3>
+              <p class="bento-card-meta">Views: 7.1M | 4 wks production</p>
+            </div>
+          </a>
+
+          <!-- Project 2: La Fuente x AMG -->
+          <a href="project-lafuente.html" class="bento-card bento-tall" data-category="artists" id="project-card-lafuente">
+            <img src="la_fuente_hd.jpg" alt="La Fuente x AMG" class="bento-img" />
+            <div class="bento-card-content">
+              <span class="badge">Artists</span>
+              <h3 class="bento-card-title">La Fuente x AMG</h3>
+              <p class="bento-card-meta">Views: 5.8M | 1 wk pre-pro</p>
+            </div>
+          </a>
+
+          <!-- Project 3: Broederliefde - Ahoy -->
+          <a href="project-broederliefde.html" class="bento-card bento-wide" data-category="events" id="project-card-broederliefde">
+            <img src="broederliefde_hd.jpg" alt="Broederliefde - Ahoy" class="bento-img" />
+            <div class="bento-card-content">
+              <span class="badge">Events</span>
+              <h3 class="bento-card-title">Broederliefde - Ahoy</h3>
+              <p class="bento-card-meta">Views: 1.9M | 8 days</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beyond the Screen & Stats -->
+    <section class="section" id="beyond-screen" style="background-color: var(--card-bg);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 32px; align-items: center;">
+          <div style="grid-column: span 6;" class="mobile-col-span-12">
+            <span class="section-title-label">[ 02 ]</span>
+            <h2 style="font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 800; margin-bottom: 20px;" id="beyond-screen-heading">
+              Beyond the Screen
+            </h2>
+            <p style="font-size: 1.15rem; color: var(--color-secondary);" id="beyond-screen-desc">
+              At Cinema Studio, we believe every story deserves its perfect stage. From the intimate tap-and-scroll of a smartphone to the immersive grandeur of the silver screen.
+            </p>
+          </div>
+
+          <div style="grid-column: span 6;" class="mobile-col-span-12">
+            <div class="highlight-box">
+              <h3 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 12px;">Mobile Content</h3>
+              <p style="font-size: 1rem; border-left: 3px solid var(--color-deep-black); padding-left: 16px;">
+                In a scroll-stop world, you need content that pops. We craft dynamic, thumb-stopping videos designed purely for mobile.
+              </p>
+              
+              <div class="stat-bars">
+                <div class="stat-bar" style="height: 20%;"></div>
+                <div class="stat-bar" style="height: 40%;"></div>
+                <div class="stat-bar" style="height: 60%;"></div>
+                <div class="stat-bar" style="height: 80%;"></div>
+                <div class="stat-bar" style="height: 100%;"></div>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; font-weight: 800; font-size: 0.85rem; text-transform: uppercase;">
+                <span>Impression Growth</span>
+                <span>2.6M+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Roll & Accordion -->
+    <section class="section" id="how-we-roll">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 48px;">
+          <div style="grid-column: span 6;" class="mobile-col-span-12">
+            <span class="section-title-label">[ 03 ]</span>
+            <h2 style="font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 800; margin-bottom: 24px;" id="how-we-roll-heading">
+              How we roll
+            </h2>
+            <p style="font-size: 1.15rem; color: var(--color-secondary); margin-bottom: 32px;" id="how-we-roll-desc">
+              At Cinema Studio, we listen first and create with you, not just for you. Everything happens in-house, fast and focused, like having your own team, with outsider firepower.
+            </p>
+            <a href="#connect" class="btn-connect open-connect-modal" id="our-approach-btn">Our Approach</a>
+          </div>
+
+          <div style="grid-column: span 6;" class="mobile-col-span-12">
+            <div class="accordion-item active" id="accordion-video">
+              <div class="accordion-header">
+                <span>Video</span>
+                <span class="material-symbols-outlined accordion-icon">add</span>
+              </div>
+              <div class="accordion-body">
+                From cinematic brand films to fast-paced social content, we create visuals designed to capture attention, build emotion, and leave a lasting impact.
+              </div>
+            </div>
+
+            <div class="accordion-item" id="accordion-photo">
+              <div class="accordion-header">
+                <span>Photography</span>
+                <span class="material-symbols-outlined accordion-icon">add</span>
+              </div>
+              <div class="accordion-body">
+                From campaign shoots to brand imagery, we create photography that feels authentic, refined, and built to strengthen the visual identity behind every brand.
+              </div>
+            </div>
+
+            <div class="accordion-item" id="accordion-animation">
+              <div class="accordion-header">
+                <span>Animation</span>
+                <span class="material-symbols-outlined accordion-icon">add</span>
+              </div>
+              <div class="accordion-body">
+                From refined 3D visuals to immersive motion design, we create animations that turn complex ideas into striking visual experiences.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Let's Connect CTA -->
+    <section class="section" id="connect-cta" style="background-color: var(--color-electric-yellow); color: var(--color-deep-black); text-align: center;">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
+        <h2 style="font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 900; line-height: 0.95; text-transform: uppercase;" id="cta-heading">
+          Let's<br/>Connect
+        </h2>
+        <p style="font-size: 1.25rem; max-width: 650px;" id="cta-desc">
+          If you're looking for a creative partner that combines craftsmanship, speed and impact, let's make something remarkable.
+        </p>
+        <button class="btn-connect open-connect-modal" style="font-size: 1.2rem; padding: 18px 40px; margin-top: 16px;" id="cta-start-btn">
+          Start a project <span class="material-symbols-outlined" style="font-size: 28px;">rocket_launch</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Connect Drawer Modal -->
+  <div id="connect-modal" class="modal-backdrop">
+    <div class="modal-drawer">
+      <div>
+        <button id="close-modal-btn" class="modal-close-btn" aria-label="Close modal">
+          <span class="material-symbols-outlined" style="font-size: 32px;">close</span>
+        </button>
+
+        <h3 style="font-size: 2rem; font-weight: 800; color: var(--color-electric-yellow); margin: 24px 0 8px 0;">Let's Connect</h3>
+        <p style="color: var(--color-off-white); margin-bottom: 32px;">Tell us about your project or idea.</p>
+
+        <form id="connect-form">
+          <div class="form-group">
+            <label for="form-name">Your Name</label>
+            <input type="text" id="form-name" class="form-control" placeholder="John Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label for="form-email">Email Address</label>
+            <input type="email" id="form-email" class="form-control" placeholder="john@company.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="form-service">Service Interested In</label>
+            <select id="form-service" class="form-control" required>
+              <option value="video">Video Production</option>
+              <option value="photography">Brand Photography</option>
+              <option value="animation">3D Animation</option>
+              <option value="full">Full Agency Partner</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="form-message">Project Brief / Details</label>
+            <textarea id="form-message" class="form-control" rows="4" placeholder="Describe goals, timeline, or scope..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-connect" style="width: 100%; justify-content: center; margin-top: 16px;">
+            Send Inquiry <span class="material-symbols-outlined">send</span>
+          </button>
+        </form>
+
+        <div id="form-success" style="display: none; text-align: center; padding: 40px 0;">
+          <span class="material-symbols-outlined" style="font-size: 64px; color: var(--color-electric-yellow);">check_circle</span>
+          <h4 style="font-size: 1.5rem; font-weight: 800; color: #FFFFFF; margin-top: 16px;">Message Received!</h4>
+          <p style="color: var(--color-off-white); margin-top: 8px;">We will get back to you within 24 hours.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px; border-top: 1px solid #333; padding-top: 16px; font-size: 0.85rem; color: #888;">
+        Cinema Studio © 2026. Built for impact.
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <h4 class="footer-title">Cinema Studio</h4>
+          <p class="footer-desc">
+            We're a creative content agency that moves at the speed of your ambition. Crafting stories with intention frame by frame.
+          </p>
+          <div class="footer-contact">
+            <span>Direct Inquiries: <a href="mailto:hello@cinemastudio.com">hello@cinemastudio.com</a></span>
+            <span>HQ: Amsterdam, Netherlands • Worldwide Studio</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-col" style="grid-column: span 3;">
+          <h5 class="footer-col-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#work">Selected Work</a></li>
+            <li><a href="#who-we-are">About Studio</a></li>
+            <li><a href="#how-we-roll">Our Manifesto</a></li>
+            <li><a href="#connect" class="open-connect-modal">Start a Project</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col" style="grid-column: span 4;">
+          <h5 class="footer-col-title">Capabilities</h5>
+          <ul class="footer-links">
+            <li><a href="#how-we-roll">Cinematic Video & Commercials</a></li>
+            <li><a href="#how-we-roll">Brand Photography & Campaign</a></li>
+            <li><a href="#how-we-roll">3D Animation & VFX Design</a></li>
+            <li><a href="#beyond-screen">Mobile-First Content Engine</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 House of Yellow. All rights reserved. Built for impact.</div>
+
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://vimeo.com" target="_blank" rel="noopener">Vimeo</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+        </div>
+
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="icon-btn" aria-label="Back to top">
+          <span class="material-symbols-outlined">arrow_upward</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
