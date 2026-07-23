@@ -4,6 +4,12 @@ Portfolio website for Cinema Studio, a creative content and production studio sp
 
 Built with Vite, Vanilla JavaScript, and custom CSS.
 
+## Preview
+
+![Cinema Studio Home Showcase](public/screenshots/preview-home.png)
+
+![Cinema Studio Detail Showcase](public/screenshots/preview-detail.png)
+
 ## Features
 
 - **Bento Grid Portfolio**: Showcase projects with interactive category filtering.
@@ -28,7 +34,7 @@ Built with Vite, Vanilla JavaScript, and custom CSS.
 ├── src/
 │   ├── main.js                 # App logic & event handlers
 │   └── styles.css              # Global styles & design system
-├── public/                     # Static media & assets
+├── public/                     # Static media, favicon & screenshots
 ├── vite.config.js              # Vite configuration
 └── package.json
 ```
